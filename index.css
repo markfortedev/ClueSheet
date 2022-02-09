@@ -1,0 +1,109 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Architects Daughter', cursive;
+    background-image: url("imgs/ballroom_mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.clipboard {
+    display: flex;
+    height: 90vh;
+    width: 90vw;
+    padding: 5vh 5vw 4vh 6vw;
+    background-image: url("imgs/clipboard.png");
+    background-size: 100% 100%;
+}
+
+td, .bold {
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 2vh;
+}
+
+table, th, td {
+    border: 6px solid rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+th {
+    background-color: gray;
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-image: url("marker.png");
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+td > input {
+    background-color: transparent;
+    border-style: hidden;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 2vh;
+}
+
+td > input:focus {
+    background-color: ghostwhite;
+    outline: none;
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.highlighted {
+    background-color: ghostwhite;
+    mask-image: url("marker.png");
+    mask-size: 100% 100%;
+}
+
+.paper {
+    flex: 1;
+}
+
+@media only screen and (min-width : 1200px) {
+
+    body {
+        background-image: url("imgs/ballroom.jpg");
+    }
+
+    .clipboard {
+        height: 90vh;
+        width: 30vw;
+        padding: 5vh 2vw 4vh 3vw;
+    }
+
+    th {
+    }
+
+    td, .bold {
+        font-weight: bold;
+        overflow: hidden;
+    }
+
+    table, th, td {
+        border: 0;
+    }
+
+    td > input:focus {
+        outline: none;
+    }
+
+    td > input {
+    }
+}
