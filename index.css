@@ -35,7 +35,7 @@ th {
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
-    mask-image: url("marker.png");
+    mask-image: url("imgs/marker.png");
     font-weight: bold;
     font-size: 2.5vh;
 }
@@ -68,7 +68,7 @@ td > input:focus {
 
 .highlighted {
     background-color: ghostwhite;
-    mask-image: url("marker.png");
+    mask-image: url("imgs/marker.png");
     mask-size: 100% 100%;
 }
 

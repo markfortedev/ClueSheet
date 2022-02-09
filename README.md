@@ -5,10 +5,10 @@ This repo is automatically deployed [here](https://cluesheet.markforte.dev) usin
 
 ## Screenshots
 
-![Desktop Site Screenshot](screenshot-desktop.png)
+![Desktop Site Screenshot](screenshots/screenshot-desktop.png)
 *Screenshot of the desktop version of the site*
 
-![Mobile Site Screenshot](screenshot-mobile.png)</br>
+![Mobile Site Screenshot](screenshots/screenshot-mobile.png)</br>
 *Screenshot of the mobile version of the site*
 
 ## Current features
