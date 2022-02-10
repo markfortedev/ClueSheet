@@ -20,4 +20,4 @@ jobs:
         env:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
         run: |
-          aws s3 sync --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*' --exclude '*.xcf' --exclude '*.md' --exclude 'screenshots/*' . s3://$AWS_S3_BUCKET
+          aws s3 sync --follow-symlinks --delete --exclude '.git/*' --exclude '.github/*' --exclude '.gitignore' --exclude '*.xcf' --exclude '*.md' --exclude 'screenshots/*' . s3://$AWS_S3_BUCKET
