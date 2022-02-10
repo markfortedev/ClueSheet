@@ -70,7 +70,7 @@ function setupTable(playerCount) {
         table.appendChild(row)
     })
     if (!mobile) {
-        table.addEventListener("mouseleave", onMouseLeaveTable)
+        table.addEventListener("mouseleave", deselectHighlightedCell)
     }
 }
 
@@ -105,13 +105,13 @@ function createRow(playerCount, headings, emptyHighlightable=false, centered=fal
             }
         } else if (emptyHighlightable) {
             col.classList.add("highlightable")
+            let input = document.createElement("input")
+            col.appendChild(input)
             if (mobile) {
                 col.addEventListener("click", highlightInputRowAndCol)
             } else {
                 col.addEventListener("mouseenter", highlightHoverRowAndCol)
             }
-            let input = document.createElement("input")
-            col.appendChild(input)
         }
         if (centered) {
             col.classList.add("centered-text")
@@ -167,7 +167,7 @@ function highlightCellRowAndCol(cell) {
     currentHighlightName = name
 }
 
-function onMouseLeaveTable(event) {
+function deselectHighlightedCell() {
     if (currentHighlightName != null) {
         currentHighlightName.classList.remove("highlighted")
     }
