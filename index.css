@@ -33,10 +33,12 @@ table, th, td {
 
 th {
     background-color: gray;
-    mask-size: cover;
+    mask-size: 100% auto;
     mask-repeat: no-repeat;
     mask-position: center;
     mask-image: url("imgs/marker.png");
+    -webkit-mask-image: url("imgs/marker.png");
+    -webkit-mask-size: 100% auto;
     font-weight: bold;
     font-size: 2.5vh;
 }
@@ -71,6 +73,10 @@ td > input:focus {
     background-color: ghostwhite;
     mask-image: url("imgs/marker.png");
     mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    -webkit-mask-image: url("imgs/marker.png");
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
 }
 
 .paper {
